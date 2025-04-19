@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maria Israel Sathyan</title>
+  <link rel="icon" type="image/x-icon" href="images/israel.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #FFC500 , #FFC500);
+      color: black;
+      padding: 2rem;
+      text-align: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #000000;
+      margin: 1rem auto;
+      display: block;
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      padding: 1rem;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .tab-button {
+      background: #000000;
+      border: 2px solid #FFC500;
+      color: #FFC500;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .tab-button:hover, .tab-button.active {
+      color: #000000;
+      background-color: #FFC500;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease forwards;
+      background-color: #ffffff;
+      margin: 1rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .tools i {
+      margin-right: 0.5rem;
+      color: #FFC500;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #FFC500;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #000;
+      background-color: #FFC500;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<header style="position: relative;">
+    <img src="images/MI.PNG" alt="Profile Picture" class="profile-pic">
+    <h1>Maria Israel Sathyan</h1>
+    <p>Technical Writer | Wordsmith for the Digital Age</p>
+    <a href="cv/Resume.pdf" download="MariaIsraelSathyan_Resume.pdf" style="text-decoration: none; position: absolute; top: 10px; right: 10px;">
+        <button style="background-color: #FFC500; color: black; border-color: black; padding: 10px 15px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px;">
+            <i class="fas fa-eye"></i> View CV
+        </button>
+    </a>
+</header>
+
+  <nav class="tabs">
+    <button class="tab-button active" data-tab="about"><i class="fas fa-user"></i> About Me</button>
+    <button class="tab-button" data-tab="skills"><i class="fas fa-tools"></i> Skills & Tools</button>
+    <button class="tab-button" data-tab="education"><i class="fas fa-graduation-cap"></i> Education</button>
+    <button class="tab-button" data-tab="Certificates"><i class="fas fa-certificate"></i> Certificate</button>
+    <button class="tab-button" data-tab="experience"><i class="fas fa-briefcase"></i> Work Experience</button>
+    <button class="tab-button" data-tab="projects"><i class="fas fa-lightbulb"></i> Core Responsibility</button>
+    <button class="tab-button" data-tab="contact"><i class="fas fa-envelope"></i> Contact</button>
+</nav>
+
+  <div class="tab-content active" id="about">
+    <p>Hello! I'm Maria Israel Sathyan, a creative and detail-driven technical writer and QA with over 5 years of experience translating and testing complex software features into accessible, user-friendly documentation. I specialize in writing API docs and product guides for SaaS platforms.</p>
+    <p>Passionate about storytelling and clarity, I thrive in collaborative environments and love working with engineers and designers to craft polished documentation that elevates user experience.</p>
+  </div>
+
+<div class="tab-content" id="skills">
+    <ul class="tools" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <li style="width: 33%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/madcap-flare-logo.png" alt="MadCap Flare" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 33%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/adobe-framemaker-logo.png" alt="Adobe FrameMaker" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 33%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/ms-word-logo.png" alt="MS Word" style="height: 50px; width: 50px;">
+    </li>
+    
+    <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/markdown-logo.png" alt="Markdown" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/html-logo.png" alt="HTML" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/git-logo.png" alt="Git" style="height: 50px; width: 50px;">
+    </li>
+     <li style="width:20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/swagger-logo.png" alt="Swagger" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/postman-logo.png" alt="Postman" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 25%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/jira-logo.png" alt="Jira" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 25%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/confluence-logo.png" alt="Confluence" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 25%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/notion-logo.png" alt="Notion" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 25%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/slack-logo.png" alt="Slack" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/lucidchart-logo.png" alt="Lucidchart" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 30%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/visio-logo.png" alt="Visio" style="height: 50px; width: 50px;">
+    </li>
+     <li style="width: 20%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/grammarly-logo.png" alt="Grammarly" style="height: 50px; width: 50px;">
+    </li>
+    <li style="width: 30%; margin-bottom: 10px; display: flex; justify-content: center; align-items: center;">
+      <img src="images/microsoft-editor-logo.png" alt="Microsoft Editor" style="height: 50px; width: 50px;">
+    </li>
+	
+  </ul>
+</div>
+
+  <div class="tab-content" id="education">
+    <div style=" solid #ccc; padding: 10px;">
+  <div style="background-color: #f0f8ff; padding: 5px; " onmouseover="this.style.backgroundColor='#FFC500'" onmouseout="this.style.backgroundColor='#FFFFFF'" >
+    <p><strong>Post graduation diploma in business administration</strong><br/> Kristu Jayanti College</p>
+  </div>
+  <div style="background-color: #e8f5e9; padding: 5px;" onmouseover="this.style.backgroundColor='#FFC500'" onmouseout="this.style.backgroundColor='#FFFFFF'">
+    <p><strong>Bachelor in Computer application</strong><br/> Kristu Jayanti College</p>
+  </div>
+</div>
+  </div>
+ <div class="tab-content" id="Certificates">
+    <br>
+<div style="width: 100%; max-height: 100%; overflow-y: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 15px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-sizing: border-box; display: flex;">
+
+
+  <div style="flex: 1; padding-right: 10px;">
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease, slideInLeft 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Certified Technical Writer - Udemy (2021)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.2s, slideInLeft 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">LEAN SIX SIGMA YELLOW BELT - Knowledge Hut (2022)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.4s, slideInLeft 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">SQL for Data Analytics - Willntrix institute (2022)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.6s, slideInLeft 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Program Diploma in strategic management - International Institute of Management (2020)</p>
+    </div>
+  </div>
+
+  <div style="flex: 1; padding-left: 10px;">
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease, slideInRight 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Award as “Process Expert” - JOY IT Solutions (2022)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.2s, slideInRight 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Best Paper award in International conference IEEE Conference (2020)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin-bottom: 10px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.4s, slideInRight 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Best Speaker Award for idea presented - Seventh Day Adventist (2016)</p>
+    </div>
+    <div style="background-color: #FFC500; border-radius: 6px; padding: 12px; margin: 0px; transition: all 0.3s ease; box-sizing: border-box; animation: fadeIn 0.5s ease 0.6s, slideInRight 0.3s ease, pulse 2s infinite alternate;">
+      <p style="margin: 0; font-size: 14px; color: #333;">Best outgoing science student - Seventh Day Adventist (2016)</p>
+    </div>
+  </div>
+
+</div>
+
+<style>
+/* For Chrome, Edge, and Safari */
+div::-webkit-scrollbar {
+  width: 8px;
+}
+
+div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background: #ffdb58;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(20px); }
+  to { transform: translateX(0); }
+}
+
+
+</style>
+
+
+</div>
+  </div>
+  <div class="tab-content" id="experience">
+ <div style="margin-bottom: 30px; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">Lead Technical Writer</strong><br/>
+                <span style="color: #000000; font-size: 14px;">Spanidea Systems, 2024–Present</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 30px; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">Senior Quality Analyst</strong><br/>
+                <span style="color: #000000; font-size: 14px;">Spanidea Systems, 2023–2024</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 30px; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">Business Analyst</strong><br/>
+                <span style="color: #000000; font-size: 14px;">Manch Technologies, 2022–2023</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 30px; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">Quality Analyst</strong><br/>
+                <span style="color: #000000; font-size: 14px;">Joy IT Solution, 2021–2022</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 30px; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">System Test Engineer</strong><br/>
+                <span style="color: #000000; font-size: 14px;">Lekha Wireless Solution, 2021–2021</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-bottom: 0; position: relative;">
+    <div style="margin-left: 20px; padding-left: 10px;">
+        <div style="position: relative; padding-left: 20px;">
+            <div style="position: absolute; left: -10px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background-color: #FFC500;"></div>
+            <div style="border-left: 2px solid #FFC500; padding-left: 10px;">
+                <strong style="color: #000000; font-size: 18px;">Test Engineer</strong><br/>
+                <span style="color: #000000; font-size: 14px;">LG Soft India, 2019–2021</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  </div>
+
+  <div class="tab-content" id="projects">
+    <ul>
+	
+      <li><strong>API Documentation: </strong> Created and maintained detailed documentation of API calls and responses, enhancing developer understanding and integration efficiency.</li>
+      <br>
+	  <li><strong>Functional Analysis & Technical Documentation:</strong> Developed comprehensive documentation of product functional analysis, translating complex technical requirements into clear, actionable specifications for engineering teams. Conducted knowledge-sharing sessions to ensure effective implementation.</li>
+      <br>
+	  <li><strong>Product Risk & Prioritization Insights:</strong> Provided product teams with critical insights into ticket risks and priorities, facilitating informed decision-making and efficient resource allocation.</li>
+      <br>
+	  <li><strong>User Story Development:</strong> Authored detailed user stories based on thorough impact analysis of feature integration, ensuring alignment with existing product functionality and user needs.</li>
+      <br>
+	  <li><strong>Release Management & Communication:</strong> Reviewed and validated release notes prior to product deployment, ensuring accuracy and clarity of information for stakeholders.</li>   
+      <br>
+	  <li><strong>Hotfix Process Leadership:</strong> Led the process and validation of hotfixes to production environments, ensuring rapid and reliable deployment while minimizing disruption.</li>
+	  <br>
+	  <li><strong>QA Team Support & Guidance:</strong> Provided guidance to QA teams on functional testing methodologies, test cycle preparation, and metric development, contributing to robust product quality assurance.</li>
+	  
+   </ul>
+  </div>
+
+  <div class="tab-content" id="contact">
+    <p><i class="fas fa-envelope"></i> <strong> Email:     <a href="mailto:israelsathyan7.com">     israelsathyan7@gmail.com</strong> </a><br/></p>
+    <p><i class="fas fa-phone"></i><strong> Phone:     +91 9380682085 , 7899051475 </strong> <br/></p>
+    <p><i class="fas fa-link"></i><strong> LinkedIn: <a href="https://www.linkedin.com/in/maria-israel-sathyan-a391a014b/">www.linkedin.com/in/maria-israel-sathyan</strong></a><br/></p>
+    <p><i class="fas fa-mouse"></i><strong> GitHub: <a href="https://github.com/IsraelRajan">github.com/Israel Rajan</strong></a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Maria Israel Sathyan — Made with ❤️ and semantic HTML + CSS + JS
+  </footer>
+
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-tab');
+
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(tab => tab.classList.remove('active'));
+
+        button.classList.add('active');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
